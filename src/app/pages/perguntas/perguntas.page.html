@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>perguntas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cont">
+    <div *ngIf="editMode == 1">
+      <ion-button (click)="edit()">sou homem</ion-button>
+      <ion-button (click)="edit()">sou mulher</ion-button>
+    </div>
+    <div *ngIf="editMode == 2">
+      <ion-input ></ion-input>
+      <ion-button (click)="edit()">Confirmar</ion-button>
+    </div>
+
+    <div *ngIf="editMode == 3">
+      <h1>quando você dorme</h1>
+      <ion-item>
+        <ion-label>hora</ion-label>
+        <ion-input type="time"></ion-input>
+      </ion-item>
+      <h1>quando você acorda</h1>
+      <ion-item>
+        <ion-label>hora</ion-label>
+        <ion-input type="time"></ion-input>
+      </ion-item>
+      <ion-button href="">Confirmar</ion-button>
+    </div>
+
+  </div>
+
+</ion-content>

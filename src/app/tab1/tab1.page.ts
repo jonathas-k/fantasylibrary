@@ -7,7 +7,10 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab1Page {
 
+
   constructor(private alertController: AlertController) {}
+
+
 
   async presentAlert() {
   

@@ -1,17 +1,76 @@
-<ion-header [translucent]="true">
-
-    
-    <ion-searchbar animated="true" class="pesquisa" placeholder="pesquisa"></ion-searchbar>
-    <ion-button class="user" fill="outline" (click)="presentAlert()"><ion-icon class="circle" name="person-circle-outline"></ion-icon></ion-button>
+  <ion-header [translucent]="true">
 
 </ion-header>
 
-<ion-content [fullscreen]="true" >
-  <ion-header collapse="condense">
- 
-   
-   
-  </ion-header>
+
+
+
+<ion-content class="body" [fullscreen]="true" >
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>config</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item button>
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>
+          <h3>lembretes</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="timer-outline"></ion-icon>
+        <ion-label>
+          <h3>metas diarias</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="wine-outline"></ion-icon>
+        <ion-label>
+          <h3>unidades</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="scale-outline"></ion-icon>
+        <ion-label>
+          <h3>genero e peso</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="time-outline"></ion-icon>
+        <ion-label>
+          <h3>o dia começa</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="warning-outline"></ion-icon>
+        <ion-label>
+          <h3>report de bug</h3>
+        </ion-label>
+      </ion-item>
+
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button><ion-icon name="person-circle-outline"></ion-icon></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+    
+    </ion-content>
+  </div>
+  <div class="container">
+    
+    <h1 class="title">quantidade a consumir</h1>
+    <h2></h2>
+    <ion-button class="torpedo" href="perguntas">Beber</ion-button>
+</div>
 
  
 </ion-content>

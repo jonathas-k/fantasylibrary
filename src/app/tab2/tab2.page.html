@@ -1,14 +1,25 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-searchbar animated="true" class="pesquisa" placeholder="pesquisa"></ion-searchbar>
-    <ion-button class="user" fill="outline"><ion-icon name="person-circle-outline" ></ion-icon></ion-button>
-  </ion-toolbar>
+ 
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-
+  <ion-header>
+    <ion-toolbar>
+      <ion-segment value="all">
+        <ion-segment-button value="all">
+          <ion-label>dia</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorites">
+          <ion-label>semana</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="mes">
+          <ion-label>mes</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
   </ion-header>
+  <h2 class="register">Registro</h2>
+
 
 
 </ion-content>
