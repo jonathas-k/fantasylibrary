@@ -7,8 +7,8 @@
 <ion-content>
   <div class="cont">
     <div *ngIf="editMode == 1">
-      <ion-button (click)="edit()">sou homem</ion-button>
-      <ion-button (click)="edit()">sou mulher</ion-button>
+      <ion-button (click)="edit()" value="homem"  >sou homem</ion-button>
+      <ion-button (click)="edit()" value="mulher" >sou mulher</ion-button>
     </div>
     <div *ngIf="editMode == 2">
       <ion-input ></ion-input>

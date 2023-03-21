@@ -13,16 +13,10 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-      <ion-item button>
+      <ion-item button id="open-modal" expand="block">
         <ion-icon name="notifications-outline"></ion-icon>
         <ion-label>
           <h3>lembretes</h3>
-        </ion-label>
-      </ion-item>
-      <ion-item button>
-        <ion-icon name="timer-outline"></ion-icon>
-        <ion-label>
-          <h3>metas diarias</h3>
         </ion-label>
       </ion-item>
       <ion-item button>
@@ -57,7 +51,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-menu-button><ion-icon name="person-circle-outline"></ion-icon></ion-menu-button>
+          <ion-menu-button><ion-icon name="settings-outline"></ion-icon></ion-menu-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
@@ -72,5 +66,27 @@
     <ion-button class="torpedo" href="perguntas">Beber</ion-button>
 </div>
 
+
+
+<ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button (click)="voltar()">voltar</ion-button>
+        </ion-buttons>
+        <ion-title>lembretes</ion-title>
+        <ion-buttons slot="end">
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label position="stacked">Enter your name</ion-label>
+        <ion-input type="text" placeholder="Your name" [(ngModel)]="name"></ion-input>
+      </ion-item>
+    </ion-content>
+  </ng-template>
+</ion-modal>
  
 </ion-content>

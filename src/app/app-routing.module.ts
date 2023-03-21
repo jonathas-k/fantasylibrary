@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'perguntas',
     loadChildren: () => import('./pages/perguntas/perguntas.module').then( m => m.PerguntasPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
 ];
 @NgModule({
