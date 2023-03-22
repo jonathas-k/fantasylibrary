@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+
+body{
+
+
+    background:linear-gradient(180deg, #2D3079 3.12%, #000000 100%);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+
+.logoArea{
+
+    position: relative;
+    top: 8rem;
+
+    height: 200px;
+    width: 200px;
+    border: 6px solid #00BCE1;
+    box-shadow: 0px 0px 10px 5px #70C4D5;
+    display: flex;border: 4px solid rgb(0, 160, 192);
+    filter: drop-shadow(0px 0px 4px rgb(0, 160, 192));
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100%;
+    
+}
+
+.whater{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    top: 60px;
+    animation: 4s floated infinite alternate;
+
+}
+
+
+
+.vortex{
+    position: absolute;
+    margin-top: 50px;
+    height: 40px;
+    width: 100px;
+    animation: 4s floated infinite alternate;
+    filter: drop-shadow(
+            
+    );
+
+
+
+
+
+}
+
+.parag{
+    position: absolute;
+    bottom: 50px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+   
+    font-size: 15px;
+    
+    width: 200px;
+   
+    color: #A0E5F3;
+
+
+
+}
+
+
+.title{
+
+
+    position: relative;
+    color: #A0E5F3;
+    filter:drop-shadow(0px 0px 4px #A0E5F3) ;
+    width: 416px;
+    height: 40px;
+   
+    margin-top: 150px;
+
+    font-family: 'Maitree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 79px;
+    text-align: center;
+
+    margin-bottom: 180px;
+
+    color: #A0E5F3;
+
+
+}
+
+.btn{
+    position: fixed;
+    height: 100vh;
+    width:100vw;
+    opacity: 0;
+
+}
+
+@keyframes floated{
+
+
+    0%,100%{
+
+            transform: translateY(-10px);
+
+
+    }50%{
+
+        transform: translateY(4px);
+
+
+
+    }
+
+
+
+}

@@ -12,8 +12,9 @@ import { PerguntasService } from 'src/app/services/perguntas.service';
 export class PerguntasPage implements OnInit {
   public editMode = 1
   private calculo!:Calculo
-  public calculoForm! :FormGroup
+  public calculoForm! : FormGroup;
   public arrayCalculo: any
+
 
   constructor(private formBuilder: FormBuilder,
     private perguntasService: PerguntasService,) { }
@@ -33,7 +34,7 @@ export class PerguntasPage implements OnInit {
       
       this.perguntasService.listarTodos().then(arrayCalculo => {this.arrayCalculo = arrayCalculo})  
     }
-    
+
 
   edit(){
     switch (this.editMode){
