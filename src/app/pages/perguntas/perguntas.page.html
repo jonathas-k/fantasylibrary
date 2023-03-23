@@ -3,30 +3,48 @@
 
 <ion-content>
   
-  <div class="cont">
+  <div class="cont" mode="ios">
  
     <div *ngIf="editMode == 1">
-        <ion-fab-button (click)="edit()" value="homem"  >sou homem</ion-fab-button>
-        <ion-fab-button (click)="edit()" value="mulher" ><img src="../../../assets/icon/womanblue.png" alt="" class="woman icon"></ion-fab-button>
+        <div class="birb">
+          
+          <img src="../../../assets/icon/passarin_azul.gif" alt="" class="Bluebird   b1">
+          <img src="../../../assets/icon/passarin_azul.gif" alt="" class="Bluebird   b2">
+          <img src="../../../assets/icon/passarin_azul.gif" alt="" class="Bluebird   b3">
+          <img src="../../../assets/icon/passarin_azul.gif" alt="" class="Bluebird   b4">
+         
+        </div>
+        <h2 class="title1"> Selecione o seu gênero </h2>
+        <div class="buttons">
+          <ion-button (click)="edit()" value="homem"  fill="clear" class="gener" ><img src="../../../assets/icon/maleblue.png" alt="" class="male icon"></ion-button>
+          <ion-button (click)="edit()" value="mulher" fill="clear" class="gener w"><img src="../../../assets/icon/womanblue.png" alt="" class="woman icon">
+        </ion-button>
+        </div>
+        <div class="sea">
+            <img src="../../../assets/icon/onda_1.png" alt="" class="onda1  o1">
+            <img src="../../../assets/icon/onda_2.png" alt="" class="onda2  o2">
+            <img src="../../../assets/icon/onda_1.png" alt="" class="onda1  o3">
+            <img src="../../../assets/icon/onda_2.png" alt="" class="onda2  o4">
         
+
+        </div>
       </div>
       <div *ngIf="editMode == 2">
-        
-        <ion-input ></ion-input>
-        <ion-button (click)="edit()" value="peso">Confirmar</ion-button>
+         <img src="../../../assets/icon/scale.gif" alt="" class="scale icon">
+         <ion-input placeholder="Ex:50.00KG" class="peso" ></ion-input>
+         <ion-button (click)="edit()" value="peso" fill="clear" class="pesob"><img src="../../../assets/icon/rogeriotech.png" alt="" class="iconic icon"></ion-button>
       </div>
       
       <div *ngIf="editMode == 3">
+         
+        <img src="../../../assets/icon/sunAndmoonBLue.gif" alt="" class="moon icon">
+
         <h1>quando você dorme</h1>
-        <ion-item>
-          <ion-label>hora</ion-label>
-          <ion-input type="time"  value="horariodorm"></ion-input>
-        </ion-item>
+        <ion-input type="time"  value="horariodorm"  placeholder="Custom input" class="peso" ></ion-input>
+
         <h1>quando você acorda</h1>
-        <ion-item>
-          <ion-label>hora</ion-label>
-          <ion-input type="time" value="horarioacor"></ion-input>
-        </ion-item>
+        <ion-input type="time" value="horarioacor"  placeholder="Custom input" class="peso"></ion-input>
+        
         <ion-button href="">Confirmar</ion-button>
       </div>
       
