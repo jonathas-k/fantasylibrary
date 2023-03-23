@@ -36,13 +36,14 @@
       </div>
       
       <div *ngIf="editMode == 3">
-         
+      <div class="logoimage">
         <img src="../../../assets/icon/sunAndmoonBLue.gif" alt="" class="moon icon">
-
-        <h1>quando você dorme</h1>
+      </div>   
+        <h1 class="horatittle">Selecione o Horario que você:</h1>
+       <h1 class="horasub1">dorme</h1>
         <ion-input type="time"  value="horariodorm"  placeholder="Custom input" class="peso" ></ion-input>
 
-        <h1>quando você acorda</h1>
+        <h1 class="horasub2">acorda</h1>
         <ion-input type="time" value="horarioacor"  placeholder="Custom input" class="peso"></ion-input>
         
         <ion-button href="">Confirmar</ion-button>
