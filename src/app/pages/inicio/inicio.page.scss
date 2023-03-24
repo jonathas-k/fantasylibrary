@@ -21,7 +21,7 @@ body{
 
 .logoArea{
 
-    position: relative;
+    position: absolute;
     top: 8rem;
 
     height: 200px;
@@ -84,17 +84,37 @@ body{
 
 }
 
+.clicktel{
+    position: absolute;
+    bottom: 1%;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+   
+    font-size: 15px;
+    
+    width: 200px;
+   
+    color: #A0E5F3;
+
+
+
+}
+
 
 .title{
 
 
-    position: relative;
+    position: absolute;
     color: #A0E5F3;
     filter:drop-shadow(0px 0px 4px #A0E5F3) ;
     width: 416px;
     height: 40px;
    
-    margin-top: 55%;
+    margin-top: 100%;
 
     font-family: 'Maitree';
     font-style: normal;
@@ -136,4 +156,33 @@ body{
 
 
 
+}
+.clicktel{
+    color: white;
+    font-family: 'Maitree';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+    animation: 1s await infinite alternate;
+}
+.click{
+    position: absolute;
+    width: 24px;
+    height: 21px;
+   bottom: 5%;
+    animation: 1s await infinite alternate;
+
+}
+
+@keyframes await{
+
+    0%{
+        filter: brightness(50%);
+
+    }
+    100%{
+
+        filter: brightness(100%);
+    }
 }

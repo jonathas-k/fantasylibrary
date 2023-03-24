@@ -16,8 +16,6 @@ export class Tab1Page {
   time: any;
 
 
-
-
   constructor() {
 
 

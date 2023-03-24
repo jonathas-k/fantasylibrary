@@ -22,34 +22,45 @@
         </div>
         <div class="sea">
             <img src="../../../assets/icon/onda_1.png" alt="" class="onda1  o1">
-            <img src="../../../assets/icon/onda_2.png" alt="" class="onda2  o2">
-            <img src="../../../assets/icon/onda_1.png" alt="" class="onda1  o3">
-            <img src="../../../assets/icon/onda_2.png" alt="" class="onda2  o4">
+           
         
 
         </div>
       </div>
       <div *ngIf="editMode == 2">
+      
          <img src="../../../assets/icon/scale.gif" alt="" class="scale icon">
-         <ion-input placeholder="Ex:50.00KG" class="peso" ></ion-input>
-         <ion-button (click)="edit()" value="peso" fill="clear" class="pesob"><img src="../../../assets/icon/rogeriotech.png" alt="" class="iconic icon"></ion-button>
+         
+         <ion-input placeholder="Ex:50.00KG" [(ngModel)]="num1" name="num1" max-Lenght="4" class="peso" ></ion-input>
+         <ion-button (click)="edit()" (click)="adicao()" value="peso" fill="clear" class="pesob"><img src="../../../assets/icon/rogeriotech.png" alt="" class="iconic icon"></ion-button>
       </div>
       
-      <div *ngIf="editMode == 3">
-      <div class="logoimage">
-        <img src="../../../assets/icon/sunAndmoonBLue.gif" alt="" class="moon icon">
-      </div>   
-        <h1 class="horatittle">Selecione o Horario que você:</h1>
-       <h1 class="horasub1">dorme</h1>
-        <ion-input type="time"  value="horariodorm"  placeholder="Custom input" class="peso" ></ion-input>
+      <div *ngIf="editMode == 3" class="minicont"> 
+      
+      
+            <h1 class="tittle">Horario</h1>
+            <ion-button  fill="clear" href="../../../app/tab1/tab1.page.html" class="logoimage">
+              <img src="../../../assets/icon/sunAndmoonBLue.gif" alt="" class="moon icon">
+            </ion-button>
+              <h1 class="horatittle">Selecione o Horario que você:</h1>
+              <div class="inpts">
+                <div class="inp1">
+                 
+                  <h1 class="horasub">Acorda</h1>
+                  <ion-input type="time"  value="horariodorm"  placeholder="Custom input in2" class="peso" ><img src="../../../assets/icon/clockicon.png" alt="" class="clock ck1"></ion-input>
+                </div>
+                <div class="inp2">
+                
+                  <h1 class="horasub">Dorme</h1>
+                  <ion-input type="time" value="horarioacor"  placeholder="Custom input in2" class="peso">  <img src="../../../assets/icon/clockicon.png" alt="" class="clock ck2"></ion-input>
+                </div>
+              </div>
+      
+           
+      
+      </div>
+      </div>
+      
 
-        <h1 class="horasub2">acorda</h1>
-        <ion-input type="time" value="horarioacor"  placeholder="Custom input" class="peso"></ion-input>
-        
-        <ion-button href="">Confirmar</ion-button>
-      </div>
-      
-  
-    </div>
     
 </ion-content>
