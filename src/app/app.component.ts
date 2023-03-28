@@ -11,4 +11,13 @@ export class AppComponent {
   async ngOnInit(){
     await this.storage.create();
   }
+
+  async setItem() {
+    await this.storage.set('key', 'value');
+  }
+
+  async getItem() {
+    const value = await this.storage.get('key');
+    console.log(value);
+  }
 }
