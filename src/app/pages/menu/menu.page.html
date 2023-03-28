@@ -1,0 +1,82 @@
+<ion-header>
+
+</ion-header>
+
+  
+  <ion-content >
+    <body>
+      
+      <ion-menu contentId="main-content">
+        <ion-header>
+          <ion-toolbar >
+            <ion-title>Config</ion-title>
+          </ion-toolbar>
+        </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item button id="open-modal" expand="block">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-label>
+          <h3>lembretes</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="wine-outline"></ion-icon>
+        <ion-label>
+          <h3>unidades</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="scale-outline"></ion-icon>
+        <ion-label>
+          <h3>genero e peso</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon name="time-outline"></ion-icon>
+        <ion-label>
+          <h3>o dia começa</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button href="historic">
+        <ion-icon name="library-outline"></ion-icon>
+        <ion-label >
+          <h3>Historico</h3>
+        </ion-label>
+      </ion-item>
+    </ion-content>
+  </ion-menu>
+   <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+  
+  <p>1200/1657</p>
+  <ion-button fill="outline" shape="round" class="buttonic">+Beber</ion-button>
+
+
+
+  <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="voltar()">voltar</ion-button>
+          </ion-buttons>
+          <ion-title>lembretes</ion-title>
+          <ion-buttons slot="end">
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+      
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</body>
+</ion-content>

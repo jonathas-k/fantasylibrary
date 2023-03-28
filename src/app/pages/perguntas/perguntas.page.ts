@@ -11,22 +11,14 @@ import { PerguntasService } from 'src/app/services/perguntas.service';
 })
 export class PerguntasPage implements OnInit {
   public editMode = 1
-  private calculo: Calculo
-  public calculoForm : FormGroup;
+  private calculo!: Calculo
+  public calculoForm! : FormGroup;
   public arrayCalculo: any
 
   
 
   constructor(private formBuilder: FormBuilder,
-    private perguntasService: PerguntasService,) { this.calculo = { id: Guid.createEmpty(), sexo: "", peso: "", horarioacor: "", horariodorm: "", resultado: "" }; 
-    this.calculoForm = this.formBuilder.group({
-      id: [''],
-      sexo: [''],
-      peso: [''],
-      horarioacor: [''],
-      horariodorm: [''], 
-      resultado: ['']
-  });
+    private perguntasService: PerguntasService,) { 
   }
 
     ngOnInit() {
